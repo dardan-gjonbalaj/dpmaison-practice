@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  background: var(--bg);
+  min-height: 100vh;
+  //background-color:rgba(237, 241, 182, 0.57);
+}
+
+:root {
+  --cursor-size: 28px;
+  --bg: #faf7ee;
+}
+
+.page-wrap {
+  // background: var(--bg);
+  // min-height: 100vh;
+  width: 100vw;
+}
+
+#cursor {
+  z-index: 10000;
+  position: fixed;
+  top: calc(var(--cursor-size) * -0.5);
+  left: calc(var(--cursor-size) * -0.5);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  filter: url(#goo);
+}
+
+.cursor-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: var(--cursor-size);
+  background: var(--bg);
+  transform-origin: center center;
+}
+
+body {
+  overflow-x: hidden;
+  /*   cursor: none; */
+}
+
+h1 {
+  margin: 0;
+  font-size: 148px;
+  line-height: 1;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.goo {
+  display: none;
+}

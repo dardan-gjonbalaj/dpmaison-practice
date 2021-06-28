@@ -1,0 +1,117 @@
+.Header {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  z-index: 10;
+  padding: 2vw;
+  transition: 0.4s;
+}
+.header-wrap {
+  flex: 1;
+}
+
+.left {
+  display: flex;
+
+  .logo {
+    width: 3.2vh;
+    position: absolute;
+    transform-origin: 50% 100%;
+  }
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ink-tab {
+    font-family: "Roboto", sans-serif;
+    transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+
+    .ink-wrapper {
+      background-color: tan;
+      background-position: 50% 50%;
+      background-size: auto;
+      background-repeat: no-repeat;
+      padding-left: 1vw;
+      padding-right: 1vw;
+
+      .ink-text {
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+
+  width: 30vw;
+  align-items: center;
+  justify-content: flex-end;
+  .cart {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+.collage {
+  padding-top: 8vw;
+  padding-right: 10vw;
+  padding-left: 23.5vw;
+  transition: 0.4s;
+}
+
+.collage-wrap {
+  //overflow: hidden;
+  padding-right: 0.8vw;
+}
+
+.w-clearfix {
+}
+
+.w-clearfix:before,
+.w-clearfix:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.collage-1 {
+  //overflow: hidden;
+  padding-right: 0.8vw;
+  -webkit-box-pack: end;
+}
+.collage-2 {
+  display: flex;
+}
+
+.head-1 {
+  display: inline-block;
+  font-family: "Mate SC", serif;
+  padding-right: 0;
+  //float: right;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Favorit, sans-serif;
+  color: #141414;
+  font-size: 14vw;
+  line-height: 12.8vw;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+
+  // transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+  //   rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  // transform-style: preserve-3d;
+}
