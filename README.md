@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Very cool "gooey" cursor effect with a minimalist design! drag the cursor around to see the effect!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
